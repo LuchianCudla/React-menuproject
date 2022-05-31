@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/****Text styling****/
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.title-price h4 {
+  font-size: 1.4rem;
+  margin: 0 1rem 1rem 1rem;
+  text-transform: capitalize;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.item-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+/****General styling****/
+
+.underline {
+  background-color: black;
+  margin: 1rem auto;
+  width: 50%;
+  height: 1px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 auto;
+}
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.menu-section {
+  width: 90vw;
+}
+
+.menu-item {
+  border-radius: 10px;
+  display: flex;
+  margin: 1rem;
+  height: 18rem;
+}
+
+.item-info {
+  display: block;
+  margin: 1rem;
+}
+
+.title-price {
+  align-items: center;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  padding: 0.7rem;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/**Buttons***/
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.category-btn {
+  border: none;
+  border-bottom: 1px solid transparent;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 1.2rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.category-btn:hover {
+  border-bottom: 1px solid black;
+}
+
+/***Media queries****/
+
+@media screen and (max-width: 778px) {
+  .container {
+    width: fit-content;
+  }
+
+  .menu-section {
+    width: fit-content;
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .title {
+    padding: 1rem;
+  }
+
+  .section-container {
+    width: fit-content;
+    padding: 0.7rem;
+  }
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    margin: 0;
+  }
+  .item-description {
+    font-size: 1.3rem;
+    line-height: 1.25;
+  }
+
+  .category-btn {
+    font-size: 1.3rem;
+  }
+
+  .img {
+    display: block;
+    width: 100%;
+  }
+}
